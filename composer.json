@@ -1,0 +1,43 @@
+{
+    "name": "acitjazz/laravelstagingmode",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@email.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/acitjazz/laravelstagingmode",
+    "keywords": ["Laravel", "LaravelStagingMode"],
+    "require": {
+        "illuminate/support": "~9",
+        "predis/predis": "^2.0",
+        "spatie/laravel-robots-middleware": "^1.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Acitjazz\\LaravelStagingMode\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Acitjazz\\LaravelStagingMode\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Acitjazz\\LaravelStagingMode\\LaravelStagingModeServiceProvider"
+            ],
+            "aliases": {
+                "LaravelStagingMode": "Acitjazz\\LaravelStagingMode\\Facades\\LaravelStagingMode"
+            }
+        }
+    }
+}
