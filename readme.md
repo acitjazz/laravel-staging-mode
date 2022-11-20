@@ -11,6 +11,11 @@ $ composer require acitjazz/laravelstagingmode
 
 ## Usage
 
+Change app env to staging
+``` bash
+APP_ENV=staging
+```
+
 Change Cache driver to redis
 ``` bash
 CACHE_DRIVER=redis
